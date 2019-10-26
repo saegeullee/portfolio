@@ -1,0 +1,42 @@
+.project {
+    width : 30%;
+    height: 350px;
+    background-color: #fff6da;
+    border-radius: 10px;
+    box-shadow: 20px 30px 30% black;
+    // margin-bottom: 10px;
+    
+
+    // &:not(:last-child) {
+    //     margin-right: 20px;
+    // }
+    
+    &__content {
+        padding: 20px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__description-label {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    &__description {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    &__skills-label {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    &__skills {
+        margin-top: 5px;
+    }
+}

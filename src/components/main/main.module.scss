@@ -1,7 +1,13 @@
+@import "../Animation/animation.scss";
+
 .main {
     font-size: 90px; 
     font-weight: bold;
     position: absolute;
     top: 25%;
     left: 10%;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }

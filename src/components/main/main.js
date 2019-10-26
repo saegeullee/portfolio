@@ -13,7 +13,7 @@ class Main extends Component {
         return(
             <div className={classes["main"]}>
                 <Text>about</Text>
-                <Text>projects</Text>
+                <Text projectDisplayed={this.props.projectDisplayed}>projects</Text>
                 <Link target="blog">blog</Link>
                 <Link target="github">github</Link>
             </div>
