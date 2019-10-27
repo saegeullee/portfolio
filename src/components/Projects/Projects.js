@@ -19,7 +19,7 @@ class Projects extends Component {
             {
                 title : "Enemy Rain",
                 description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript"]
+                skills : ["html", "css", "javascript", "django", "rubyonrails", "flask", "nodejs"]
             },
             {
                 title : "Enemy Rain",

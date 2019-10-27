@@ -1,3 +1,5 @@
+@import "../Styles//constants.module.scss";
+
 .link-item {
 
     position: relative;
@@ -14,7 +16,7 @@
         left:0;
         height: 100%;
         width: 3px;
-        background-color: #fbc99d;
+        background-color: $color-3;
         transform: scaleY(0);
         transition: transform .2s,
                     width .4s cubic-bezier(1,0,0,1) .2s,
@@ -28,7 +30,7 @@
     }
 
     &__text {
-        color: #ed1250;
+        color: $color-4;
         position: relative;
         z-index: 1;
     }
