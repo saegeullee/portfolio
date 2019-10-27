@@ -5,7 +5,7 @@ const text = props => {
 
     return(
         <div 
-            onClick={props.projectDisplayed} 
+            onClick={props.projectDisplayed ? props.projectDisplayed : props.aboutDisplayed} 
             className={classes["text-item"]}>
                 <span                 
                     className={classes["text-item__text"]}>

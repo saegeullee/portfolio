@@ -1,17 +1,20 @@
 @import "../Animation//animation.scss";
 
 .projects {
-    margin-top: 50px;
     flex-wrap: wrap;
-    margin-right: 200px;
     display:flex;
     justify-content: space-evenly;
     padding:20px;
     width : 100%;  
     max-width: 900px;
     height: 800px;
+    
+    // animation-name: moveInLeft;
+    // animation-duration: 1s;
+    // animation-timing-function: ease-out;
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
 }
