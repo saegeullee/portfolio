@@ -1,0 +1,31 @@
+@import '../Styles/constants.module.scss';
+
+.skills {
+  margin-top: -100px;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  padding: 0 200px;
+
+  &__label-top {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  &__label {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  &__overview {
+    font-size: $font-size-big;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  &__details-element {
+    font-size: $font-size-medium;
+    margin-top: 2px;
+  }
+}

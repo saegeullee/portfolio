@@ -1,34 +1,35 @@
-@import "../Styles//constants.module.scss";
+@import '../Styles//constants.module.scss';
 
 .text-item {
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 5px;
+  max-width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $color-1;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+  }
+
+  &:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &__text {
+    color: #000;
     position: relative;
-    text-decoration: none;
-    margin-bottom: 5px;
-    max-width: 100%;
+    z-index: 1;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top:0;
-        left:0;
-        height: 100%;
-        width: 3px;
-        background-color: $color-4;
-        transform: scaleY(0);
-        transition: transform .2s,
-                    width .4s cubic-bezier(1,0,0,1) .2s,
-                    background-color .1s;
+    &:hover {
+      color: #fff;
     }
-
-    &:hover::before {
-        transform: scaleY(1);
-        width: 100%;
-    }
-
-    &__text{
-        color: $color-3;
-        position: relative;
-        z-index: 1;
-    }
+  }
 }
-

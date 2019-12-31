@@ -1,13 +1,13 @@
-@import "../../../Styles//constants.module.scss";
+@import '../../../Styles/constants.module.scss';
 
 .skills-tag {
-    margin-top: 3px;
-    background-color: $color-3;
-    width: auto;
-    padding: 1px 10px;
-    border-radius: 10px;
-    
-    &:not(:last-child) {
-        margin-right: 5px;
-    }
+  margin-top: 3px;
+  width: auto;
+  padding: 1px 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
 }

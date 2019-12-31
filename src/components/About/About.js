@@ -1,35 +1,12 @@
-import React from "react"
-import classes from "./About.module.scss"
-import woman from "../../image/woman.jpg"
+import React from 'react';
+import classes from './About.module.scss';
+import { intro_title as title, intro_details as details } from '../../data/data';
 
 const about = props => (
+  <div className={classes['about']}>
+    <div className={classes['about__title']}>{title}</div>
+    <div className={classes['about__details']}>{details}</div>
+  </div>
+);
 
-    <div className={classes["about"]}>
-        <div className={classes["about__profile"]}>
-            <div className={classes["about__profile-top"]}>
-
-                <div className={classes["about__profile-user"]}>
-                    <img src={woman} className={classes["about__profile-img"]}>
-
-                    </img>
-                    <div className={classes["about__profile-name"]}>
-                        SAEGEUL LEE
-                    </div>
-                </div>
-                <div className={classes["about__position"]}>
-
-                    FULLSTACK DEVELOPER
-                </div>
-
-            </div>
-
-            <div className={classes["about__profile-bottom"]}>
-                html, css, javascript, react, nodejs
-            </div>
-        </div>
-
-    </div>
-
-)
-
-export default about
+export default about;

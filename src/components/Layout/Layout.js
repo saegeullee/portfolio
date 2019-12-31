@@ -1,44 +1,78 @@
-import React, {Component} from "react"
-import classes from "./Layout.module.scss"
-import Main from "../main/main"
-import Projects from "../Projects/Projects"
-import About from "../About/About"
+import React, { Component } from 'react';
+import classes from './Layout.module.scss';
+import Navigation from '../Navigation/Navigation';
+import Projects from '../Projects/Projects';
+import About from '../About/About';
+import Skills from '../Skills/Skills';
+import ProjectDetails from '../Projects/ProjectDetails/ProjectDetails';
 
 class Layout extends Component {
-    
-    state = {
-        displayProjects : false,
-        displayAbout : true
-    }
+  state = {
+    displayAbout: false,
+    displayProjects: true,
+    displayProjectDetails: false,
+    displaySkills: false,
+    currentDetailsTitle: ''
+  };
 
-    displayProjectsHandler = () =>{
-        this.setState({displayProjects : true, displayAbout : false})
-    }
+  displayProjectsHandler = () => {
+    this.setState({
+      displayProjects: true,
+      displayAbout: false,
+      displayProjectDetails: false,
+      displaySkills: false
+    });
+  };
 
-    displayAboutHandler = () => {
-        this.setState({displayProjects : false, displayAbout:true})
-    }
+  displayAboutHandler = () => {
+    this.setState({
+      displayProjects: false,
+      displayAbout: true,
+      displayProjectDetails: false,
+      displaySkills: false
+    });
+  };
 
-    render() {
+  displaySkillsHandler = () => {
+    this.setState({
+      displayProjects: false,
+      displayAbout: false,
+      displayProjectDetails: false,
+      displaySkills: true
+    });
+  };
 
-        let projects, about = ""
-        if(this.state.displayProjects) { projects = <Projects />}
-        if(this.state.displayAbout) { about = <About />}
+  displayProjectDetailsHandler = (event, title) => {
+    this.setState({
+      displayProjectDetails: true,
+      displayProjects: false,
+      displayAbout: false,
+      displaySkills: false,
+      currentDetailsTitle: title
+    });
+  };
 
-        return(
-            <div className={classes["Layout"]}>
-                <div>
-                    <Main 
-                        aboutDisplayed={this.displayAboutHandler}
-                        projectDisplayed={this.displayProjectsHandler}/>
-                </div>
-                <div>
-                    {projects}
-                    {about}
-                </div>
-            </div>
-        )
-    }
+  render() {
+    let { displayAbout, displaySkills, displayProjects, displayProjectDetails } = this.state;
+
+    return (
+      <div className={classes['layout']}>
+        <div className={classes['layout__nav']}>
+          <Navigation
+            aboutDisplayed={this.displayAboutHandler}
+            projectDisplayed={this.displayProjectsHandler}
+            skillsDisplayed={this.displaySkillsHandler}
+          />
+        </div>
+        <div className={classes['layout__content']}>
+          {displayAbout && <About />}
+          {displayProjects && <Projects detailsClicked={this.displayProjectDetailsHandler} />}
+          {displayProjectDetails && <ProjectDetails title={this.state.currentDetailsTitle} />}
+          {displaySkills && <Skills />}
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Layout
+export default Layout;

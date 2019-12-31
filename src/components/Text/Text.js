@@ -1,18 +1,14 @@
-import React from "react"
-import classes from "./Text.module.scss"
+import React from 'react';
+import classes from './Text.module.scss';
 
 const text = props => {
+  let currentNavHandler = props.projectDisplayed || props.aboutDisplayed || props.skillsDisplayed;
 
-    return(
-        <div 
-            onClick={props.projectDisplayed ? props.projectDisplayed : props.aboutDisplayed} 
-            className={classes["text-item"]}>
-                <span                 
-                    className={classes["text-item__text"]}>
-                    {props.children}
-                </span>
-        </div>
-    )
-}
+  return (
+    <div onClick={currentNavHandler} className={classes['text-item']}>
+      <span className={classes['text-item__text']}>{props.children}</span>
+    </div>
+  );
+};
 
-export default text
+export default text;

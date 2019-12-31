@@ -1,0 +1,12 @@
+@import '../Animation/animation.scss';
+
+.navigation {
+  font-size: 90px;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}

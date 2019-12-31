@@ -1,56 +1,22 @@
-import React, {Component} from "react"
-import Project from "./Project/Project"
-import classes from "./Projects.module.scss"
+import React, { Component } from 'react';
+import Project from './Project/Project';
+import classes from './Projects.module.scss';
+import { projectsData } from '../../data/data';
 
 class Projects extends Component {
+  state = {
+    projects: projectsData
+  };
 
-    state = {
-        projects : [
-            {
-                title : "Enemy Rain",
-                description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript"]
-            },
-            {
-                title : "Enemy Rain",
-                description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript"]
-            },
-            {
-                title : "Enemy Rain",
-                description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript", "django", "rubyonrails", "flask", "nodejs"]
-            },
-            {
-                title : "Enemy Rain",
-                description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript"]
-            },
-            {
-                title : "Enemy Rain",
-                description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript"]
-            },
-            {
-                title : "Enemy Rain",
-                description : "Javascript game that hero has to survive among falling enemies",
-                skills : ["html", "css", "javascript"]
-            }
-        ]
-    }
+  render() {
+    let projectItems = '';
 
-    render() {
+    projectItems = this.state.projects.map(prj => (
+      <Project title={prj.title} project={prj} detailsClicked={this.props.detailsClicked} />
+    ));
 
-        let projectItems = "";
-
-        projectItems = this.state.projects.map(prj => <Project project={prj}/>)
-     
-        return(
-            <div className={classes["projects"]}>
-                {projectItems}
-            </div>
-        )
-    }
+    return <div className={classes['projects']}>{projectItems}</div>;
+  }
 }
 
-export default Projects
+export default Projects;
