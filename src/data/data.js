@@ -14,7 +14,7 @@ import ex_admin_gif_4 from '../gif/ex-admin/ex_admin_gif_4.gif';
 
 export const projectsData = [
   {
-    title: 'Admin Dashboard',
+    title: 'EX Admin Dashboard',
     description:
       '클래스101에서 백엔드 개발자로 인턴쉽을 진행하며 EX팀 어드민 대시보드를 개발했습니다. 백엔드 개발자 2명, 프론트엔드 개발자 1명과 협업하여 1개월동안 개발했습니다.',
     additionalDescription:
@@ -34,20 +34,12 @@ export const projectsData = [
     date: '19.11.25 ~ 19.12.20',
     additionalSources: [
       {
-        title: '위코드101 백엔드 GITHUB REPO',
-        link: 'https://github.com/wecode-bootcamp-korea/class101-backend'
+        title: 'EX ADMIN 대시보드 GITHUB REPO',
+        link: 'https://github.com/saegeullee/groupmeal'
       },
       {
-        title: '위코드101 프로젝트 후기',
-        link: 'https://saegeullee.github.io/category/project/2nd-group-project-review'
-      },
-      {
-        title: '요기용 프로젝트 Full Video(웹)',
-        link: 'https://www.youtube.com/watch?v=4tiTjufaJg8'
-      },
-      {
-        title: '요기용 프로젝트 Full Video(앱)',
-        link: 'https://www.youtube.com/watch?v=L7FsHvjPA-c'
+        title: 'EX ADMIN 대시보드 Full Video',
+        link: 'https://www.youtube.com/watch?v=mdrhlrZpZHo&t=205s'
       }
     ]
   },
@@ -96,7 +88,7 @@ export const projectsData = [
     gifs: [yogiyong_gif_1, yogiyong_gif_2, yogiyong_gif_3],
     date: '19.10.28 ~ 19.11.8',
     whatIHaveDoneSummary:
-      '이번 프로젝트에서 저는 백엔드를 위주로 개발하였고 프론트엔드도 일부분 개발했습니다.',
+      '이번 프로젝트에서 저는 백엔드를 위주로 개발하였고 프론트엔드 일부분을 개발했습니다.',
     whatIHaveDoneForBackend: [
       'Scrum 진행(주별 스프린트 미팅, 일별 스탠드업 미팅) with Trello',
       '요기요 모델 설계 및 ERD 작성',
@@ -114,11 +106,6 @@ export const projectsData = [
       '리덕스를 사용하여 음식 장바구니 추가,제거,리셋 및 주문 로직 구현'
     ],
     additionalSources: [
-      {
-        title: '요기용 모델 관계도(ERD)',
-        link:
-          'https://github.com/wecode-bootcamp-korea/yogiyong-backend/blob/master/yogiyong_erd.png'
-      },
       {
         title: '요기용 백엔드 GITHUB REPO',
         link: 'https://github.com/wecode-bootcamp-korea/yogiyong-backend'
@@ -143,6 +130,7 @@ export const projectsData = [
     skills: ['Javascript', 'React', 'Html', 'Css'],
     gifs: [westagram_gif_1, westagram_gif_2, westagram_gif_3],
     date: '19.10.14 ~ 19.10.24',
+    whatIHaveDone: ['프론트엔드 UI를 개발했습니다.'],
     additionalSources: [
       {
         title: 'Instagram GITHUB REPO',
@@ -195,7 +183,10 @@ export const skills = [
   },
   {
     title: 'MySQL',
-    details: ['']
+    details: [
+      'SQL 쿼리를 mysql 쉘에서 익숙하게 사용할 수 있습니다.',
+      'OneToOne, OneToMany, ManyToMany를 사용하여 데이터 모델링을 할 수 있습니다.'
+    ]
   },
   {
     title: 'AWS',
@@ -207,13 +198,12 @@ export const skills = [
   },
   {
     title: 'Linux',
-    details: ['']
+    details: ['리눅스 기본 커맨드를 익숙하게 사용할 수 있습니다']
   },
   {
     title: 'Git/Github',
     details: [
       '깃과 깃헙을 능숙하게 사용하여 다른 개발자들과 협업을 할 수 있습니다.',
-      '스쿼시와 리베이스를 하는데 익숙하며 왜 해야 하는지 이해하고 있습니다.',
       'git flow가 무엇인지 알고 있으며 왜 사용해야 하는지 이해하고 있습니다.'
     ]
   },
@@ -243,6 +233,19 @@ export const skills = [
   },
   {
     title: 'Java',
-    details: ['']
+    details: [
+      '자바는 저의 첫번째 언어입니다. 자바를 익숙하게 사용하여 어플리케이션을 만들 수 있습니다.',
+      '자바를 사용하여 프로젝트를 진행한 경험이 다수 있습니다. 주로 안드로이드 어플리케이션을 만들어본 경험이 있습니다.'
+    ],
+    projects: [
+      {
+        title: 'MyCourses Project Github Repo',
+        github: 'https://github.com/saegeullee/MyCourses'
+      },
+      {
+        title: 'MySNS Project Github Repo',
+        github: 'https://github.com/saegeullee/MySNS_ALL'
+      }
+    ]
   }
 ];

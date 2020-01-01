@@ -7,6 +7,10 @@
   height: auto;
   padding: 0 200px;
 
+  &:last-child {
+    margin-bottom: 100px;
+  }
+
   &__label-top {
     font-size: 40px;
     font-weight: bold;

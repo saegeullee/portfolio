@@ -25,6 +25,14 @@ const skills = props => {
                 el.details.map(detail => (
                   <li className={classes['skills__details-element']}>{detail}</li>
                 ))}
+              {el.projects &&
+                el.projects.map(project => (
+                  <li className={classes['skills__details-element']}>
+                    <a target="_blank" rel="noopener noreferrer" href={project.github}>
+                      {project.title}
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
         </>
