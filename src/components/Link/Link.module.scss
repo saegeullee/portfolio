@@ -34,3 +34,14 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .link-item {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    max-width: 70%;
+    z-index: 10;
+  }
+}

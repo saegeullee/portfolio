@@ -57,19 +57,15 @@ class Layout extends Component {
 
     return (
       <div className={classes['layout']}>
-        <div className={classes['layout__nav']}>
-          <Navigation
-            aboutDisplayed={this.displayAboutHandler}
-            projectDisplayed={this.displayProjectsHandler}
-            skillsDisplayed={this.displaySkillsHandler}
-          />
-        </div>
-        <div className={classes['layout__content']}>
-          {displayAbout && <About />}
-          {displayProjects && <Projects detailsClicked={this.displayProjectDetailsHandler} />}
-          {displayProjectDetails && <ProjectDetails title={this.state.currentDetailsTitle} />}
-          {displaySkills && <Skills />}
-        </div>
+        <Navigation
+          aboutDisplayed={this.displayAboutHandler}
+          projectDisplayed={this.displayProjectsHandler}
+          skillsDisplayed={this.displaySkillsHandler}
+        />
+        {displayAbout && <About />}
+        {displayProjects && <Projects detailsClicked={this.displayProjectDetailsHandler} />}
+        {displayProjectDetails && <ProjectDetails title={this.state.currentDetailsTitle} />}
+        {displaySkills && <Skills />}
       </div>
     );
   }

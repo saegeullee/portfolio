@@ -33,3 +33,13 @@
     margin-top: 2px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+  }
+}

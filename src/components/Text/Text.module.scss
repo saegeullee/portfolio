@@ -34,3 +34,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .text-item {
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 5px;
+    max-width: 70%;
+    cursor: pointer;
+  }
+}
