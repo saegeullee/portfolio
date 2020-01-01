@@ -8,8 +8,8 @@ import ProjectDetails from '../Projects/ProjectDetails/ProjectDetails';
 
 class Layout extends Component {
   state = {
-    displayAbout: false,
-    displayProjects: true,
+    displayAbout: true,
+    displayProjects: false,
     displayProjectDetails: false,
     displaySkills: false,
     currentDetailsTitle: ''
