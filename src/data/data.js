@@ -20,6 +20,7 @@ export const projectsData = [
     additionalDescription:
       '이 대시보드에는 서로 다른 부서의 직원들이 친해질 수 있는 사내 친목조 생성 기능과 사내 비품(노트북, 모니터 등) 관리 기능이 있습니다.',
     whatIHaveDone: [
+      '제품 기획단계부터 배포까지 참여',
       'Scrum 진행(주별 스프린트 미팅, 일별 스탠드업 미팅) with Trello',
       '데이터베이스 스키마 디자인 및 ERD 작성',
       'Nodejs API 설계 및 Restful API 구현',
@@ -88,7 +89,7 @@ export const projectsData = [
     gifs: [yogiyong_gif_1, yogiyong_gif_2, yogiyong_gif_3],
     date: '19.10.28 ~ 19.11.8',
     whatIHaveDoneSummary:
-      '이번 프로젝트에서 저는 백엔드를 위주로 개발하였고 프론트엔드 일부분을 개발했습니다.',
+      '이 프로젝트에서 저는 백엔드를 위주로 개발하였고 프론트엔드 일부분을 개발했습니다.',
     whatIHaveDoneForBackend: [
       'Scrum 진행(주별 스프린트 미팅, 일별 스탠드업 미팅) with Trello',
       '요기요 모델 설계 및 ERD 작성',
@@ -140,7 +141,9 @@ export const projectsData = [
   }
 ];
 
-export const intro_title = '안녕하세요 저는 이새글입니다. 현재 신입 백엔드 개발자로 구직중입니다.';
+export const intro_title_1 = '안녕하세요 저는 이새글입니다.';
+export const intro_title_2 = '현재 신입 백엔드 개발자로 구직중입니다.';
+
 export const intro_details =
   '코딩부트캠프 위코드에서 4기 백엔드 교육과정(3개월)을 수료하였고 클래스101에서 백엔드 개발자로 인턴쉽 프로그램(1개월)을 진행하였습니다. ';
 
@@ -150,13 +153,6 @@ export const skills_overview =
   'Communication, Javascript, Node.js, MySQL, MongoDB, AWS, Git, Github, React, HTML/CSS, Java, Python, DJango';
 
 export const skills = [
-  {
-    title: 'Communication',
-    details: [
-      '개발자에게 커뮤니케이션이 개발보다 더 중요하다고 생각합니다. 커뮤니케이션이 안되면 엉뚱한 제품을 만들기 때문입니다.',
-      '항상 적극적으로 의견을 말합니다.'
-    ]
-  },
   {
     title: 'Javascript',
     details: [
@@ -210,7 +206,7 @@ export const skills = [
   {
     title: 'HTML/CSS',
     details: [
-      '원하는 UI를 능숙하게 만들어 낼 수 있습니다.',
+      '원하는 UI를 익숙하게 만들어 낼 수 있습니다.',
       'BEM을 사용하여 클래스 이름을 구성합니다.',
       'Css 프리프로세서 Sass를 사용할 수 있습니다.'
     ]

@@ -22,6 +22,10 @@
     margin-top: 30px;
   }
 
+  &__details {
+    margin-top: 10px;
+  }
+
   &__overview {
     font-size: $font-size-big;
     font-weight: bold;
@@ -31,14 +35,16 @@
   &__details-element {
     font-size: $font-size-medium;
     margin-top: 2px;
+    margin-left: 20px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .skills {
     margin-top: 50px;
-    width: 100%;
+    width: 80%;
     max-width: 500px;
+    margin-right: 5%;
     height: auto;
     padding: 0;
   }

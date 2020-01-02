@@ -22,7 +22,7 @@
   }
 
   &__description-wrapper {
-    width: 700px;
+    width: 90%;
   }
 
   &__description {
@@ -75,7 +75,7 @@
   .projectDetails {
     padding: 0;
     margin-top: 50px;
-    width: 100%;
+    width: 80%;
     max-width: 500px;
     height: auto;
 
@@ -83,12 +83,12 @@
     flex-direction: column;
 
     &__description-wrapper {
-      width: 500px;
+      width: auto;
     }
 
     &__gif {
       margin-top: 50px;
-      width: 500px;
+      width: 100%;
       height: auto;
     }
   }

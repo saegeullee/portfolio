@@ -3,10 +3,22 @@
 .navigation {
   font-size: 90px;
   font-weight: bold;
-  width: auto;
   height: auto;
+  flex: 0 0 20%;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    font-size: 60px;
+    font-weight: bold;
+    height: auto;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
 }
