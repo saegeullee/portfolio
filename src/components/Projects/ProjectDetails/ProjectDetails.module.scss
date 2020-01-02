@@ -44,8 +44,14 @@
     margin-top: 2px;
   }
 
+  &__whatIhaveDone-ul {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
   &__whatIhaveDoneSummary {
     font-size: $font-size-medium;
+    margin-top: 10px;
   }
 
   &__techStack {

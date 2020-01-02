@@ -9,7 +9,7 @@ const project = props => {
   }
 
   return (
-    <div className={classes['project']}>
+    <div onClick={event => props.detailsClicked(event, props.title)} className={classes['project']}>
       <div className={classes['project__content']}>
         <div className={classes['project__title']}>{props.project.title}</div>
         <div className={classes['project__date']}>{props.project.date}</div>

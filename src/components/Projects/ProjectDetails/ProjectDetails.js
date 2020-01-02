@@ -32,7 +32,9 @@ const projectDetails = props => {
     whatIHaveDone = currentProject.whatIHaveDone.map(el => (
       <li className={classes['projectDetails__whatIhaveDone-element']}>{el}</li>
     ));
-    whatIHaveDone = <ul>{whatIHaveDone}</ul>;
+    whatIHaveDone = (
+      <ul className={classes['projectDetails__whatIhaveDone-ul']}>{whatIHaveDone}</ul>
+    );
   }
 
   let whatIHaveDoneForBackend = '';
@@ -40,7 +42,9 @@ const projectDetails = props => {
     whatIHaveDoneForBackend = currentProject.whatIHaveDoneForBackend.map(el => (
       <li className={classes['projectDetails__whatIhaveDone-element']}>{el}</li>
     ));
-    whatIHaveDoneForBackend = <ul>{whatIHaveDoneForBackend}</ul>;
+    whatIHaveDoneForBackend = (
+      <ul className={classes['projectDetails__whatIhaveDone-ul']}>{whatIHaveDoneForBackend}</ul>
+    );
     whatIHaveDoneForBackend = (
       <>
         <div className={classes['projectDetails__whatIhaveDone-label']}>백엔드</div>
@@ -54,7 +58,9 @@ const projectDetails = props => {
     whatIHaveDoneForFrontend = currentProject.whatIHaveDoneForFrontend.map(el => (
       <li className={classes['projectDetails__whatIhaveDone-element']}>{el}</li>
     ));
-    whatIHaveDoneForFrontend = <ul>{whatIHaveDoneForFrontend}</ul>;
+    whatIHaveDoneForFrontend = (
+      <ul className={classes['projectDetails__whatIhaveDone-ul']}>{whatIHaveDoneForFrontend}</ul>
+    );
     whatIHaveDoneForFrontend = (
       <>
         <div className={classes['projectDetails__whatIhaveDone-label']}>프론트엔드</div>
@@ -84,7 +90,9 @@ const projectDetails = props => {
         </a>
       </li>
     ));
-    additionalSources = <ul>{additionalSources}</ul>;
+    additionalSources = (
+      <ul className={classes['projectDetails__whatIhaveDone-ul']}>{additionalSources}</ul>
+    );
   }
 
   return (
