@@ -20,11 +20,11 @@ export const projectsData = [
     additionalDescription:
       '이 대시보드에는 서로 다른 부서의 직원들이 친해질 수 있는 사내 친목조 생성 기능과 사내 비품(노트북, 모니터 등) 관리 기능이 있습니다.',
     whatIHaveDone: [
-      '제품 기획단계부터 배포까지 참여',
+      '제품 기획단계부터 참여',
       'Scrum 진행(주별 스프린트 미팅, 일별 스탠드업 미팅) with Trello',
       '데이터베이스 스키마 디자인 및 ERD 작성',
       'Nodejs API 설계 및 Restful API 구현',
-      '클래스101 사내 친목조 생성 로직 및 API 구현',
+      '클래스101 사내 친목조 생성 알고리즘 및 API 구현',
       '클래스101 사내 비품 아이템(노트북, 모니터 등) CRUD API 구현',
       '쿼리스트링에 따른 총 비품 아이템 필터링, 정렬, 페이징 구현',
       'AWS EC2 배포, AWS DocumentDB에 DB 구축',
@@ -95,15 +95,15 @@ export const projectsData = [
       '요기요 모델 설계 및 ERD 작성',
       'RESTFUL API 설계 및 구현',
       '레스토랑 관련 모델 구현',
-      'requests를 사용하여 요기요 크롤링 구현 및 DB 구축',
+      '요기요 사이트 크롤링 구현 및 DB 구축',
       '모든 식당 카테고리 정보 GET 엔드포인트 구현',
       '식당 카테고리별 식당 목록 GET 엔드포인트 구현(정렬 및 페이징 포함)',
       '식당 검색 기능 엔드포인트 구현(페이징 포함)'
     ],
     whatIHaveDoneForFrontend: [
       'Google Maps API를 사용하여 구글 지도에 현재 가게목록의 가게위치 보여주기 구현',
-      '주문 완료시 나오는 땡큐페이지 구현',
-      '사용자의 주문 내역 페이지 구현',
+      '주문 완료시 나오는 땡큐페이지 UI 구현',
+      '사용자의 주문 내역 페이지 UI 구현',
       '리덕스를 사용하여 음식 장바구니 추가,제거,리셋 및 주문 로직 구현'
     ],
     additionalSources: [
@@ -135,7 +135,7 @@ export const projectsData = [
     additionalSources: [
       {
         title: 'Instagram GITHUB REPO',
-        link: 'https://github.com/saegeullee/Instagram_clone'
+        link: 'https://github.com/saegeullee/Instagram_react'
       }
     ]
   }
@@ -144,8 +144,10 @@ export const projectsData = [
 export const intro_title_1 = '안녕하세요 저는 이새글입니다.';
 export const intro_title_2 = '현재 신입 백엔드 개발자로 구직중입니다.';
 
-export const intro_details =
+export const intro_details_1 =
   '코딩부트캠프 위코드에서 4기 백엔드 교육과정(3개월)을 수료하였고 클래스101에서 백엔드 개발자로 인턴쉽 프로그램(1개월)을 진행하였습니다. ';
+
+export const intro_details_2 = '서울과학기술대학교 컴퓨터공학과';
 
 export const wecode_url = 'http://wecode.co.kr/';
 
@@ -165,14 +167,14 @@ export const skills = [
     title: 'Node.js',
     details: [
       'Node.js가 작동하는 방법에 대해 이해하고 있습니다.',
-      'express 프레임워크를 사용하여 Restful API 서버를 능숙하게 만들 수 있습니다.',
+      'express 프레임워크를 사용하여 Restful API 서버를 익숙하게 만들 수 있습니다.',
       '모델, 라우터, 컨트롤러, 서비스를 나누어 구조화된 서버를 만들 수 있습니다.'
     ]
   },
   {
     title: 'MongoDB',
     details: [
-      'MongoDB 쿼리를 몽고 쉘에서 능숙하게 사용할 수 있습니다.',
+      'MongoDB 쿼리를 몽고 쉘에서 익숙하게 사용할 수 있습니다.',
       '데이터 모델을 설계 할 수 있으며 referencing과 embedding을 언제 사용해야 하는지 이해하고 있습니다.',
       'Aggregation 파이프라인을 사용할 수 있습니다.'
     ]
@@ -194,12 +196,13 @@ export const skills = [
   },
   {
     title: 'Linux',
-    details: ['리눅스 기본 커맨드를 익숙하게 사용할 수 있습니다']
+    details: ['리눅스 기본 커맨드를 익숙하게 사용할 수 있습니다.']
   },
   {
     title: 'Git/Github',
     details: [
-      '깃과 깃헙을 능숙하게 사용하여 다른 개발자들과 협업을 할 수 있습니다.',
+      '깃과 깃헙을 익숙하게 사용하여 다른 개발자들과 협업을 할 수 있습니다.',
+      '깃 리베이스를 할 수 있으며 스쿼시를 통해 커밋을 깔끔하게 관리할 수 있습니다',
       'git flow가 무엇인지 알고 있으며 왜 사용해야 하는지 이해하고 있습니다.'
     ]
   },
@@ -207,7 +210,6 @@ export const skills = [
     title: 'HTML/CSS',
     details: [
       '원하는 UI를 익숙하게 만들어 낼 수 있습니다.',
-      'BEM을 사용하여 클래스 이름을 구성합니다.',
       'Css 프리프로세서 Sass를 사용할 수 있습니다.'
     ]
   },
@@ -223,8 +225,8 @@ export const skills = [
   {
     title: 'Python/Django',
     details: [
-      'python request로 사이트를 크롤링하여 DB 구축 스크립트를 짤 수 있습니다.',
-      'Django ORM을 사용하여 Restful API 서버를 만들 수 있습니다'
+      '웹사이트를 크롤링하여 DB를 구축할 수 있습니다.',
+      'Django를 사용하여 Restful API 서버를 만들 수 있습니다.'
     ]
   },
   {

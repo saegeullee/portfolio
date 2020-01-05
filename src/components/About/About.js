@@ -3,7 +3,8 @@ import classes from './About.module.scss';
 import {
   intro_title_1 as title_1,
   intro_title_2 as title_2,
-  intro_details as details
+  intro_details_1 as details_1,
+  intro_details_2 as details_2
 } from '../../data/data';
 
 const about = props => (
@@ -13,7 +14,7 @@ const about = props => (
       <br></br>
       {title_2}
     </div>
-    <div className={classes['about__details']}>{details}</div>
+    <div className={classes['about__details']}>{details_1}</div>
   </div>
 );
 
