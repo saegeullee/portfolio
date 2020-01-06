@@ -142,14 +142,37 @@ export const projectsData = [
 ];
 
 export const intro_title_1 = '안녕하세요 저는 이새글입니다.';
-export const intro_title_2 = '현재 신입 백엔드 개발자로 구직중입니다.';
+export const intro_title_2 = '제품을 통해 사용자를 기쁘게 만들고 싶은 백엔드 개발자입니다.';
 
 export const intro_details_1 =
-  '코딩부트캠프 위코드에서 4기 백엔드 교육과정(3개월)을 수료하였고 클래스101에서 백엔드 개발자로 인턴쉽 프로그램(1개월)을 진행하였습니다. ';
+  '새로운 기술에 관심이 많으며 동료들과의 커뮤니케이션과 상호 피드백 및 리뷰를 좋아합니다. 현재 신입 백엔드 개발자로 구직중입니다. 데이터에 기반하여 의사결정을 하는 회사에서 일하고 싶습니다.';
+// '코딩부트캠프 위코드에서 4기 백엔드 교육과정(3개월)을 수료하였고 클래스101에서 백엔드 개발자로 인턴쉽 프로그램(1개월)을 진행하였습니다. ';
+//'현재 신입 백엔드 개발자로 구직중입니다.'
 
 export const intro_details_2 = '서울과학기술대학교 컴퓨터공학과';
 
 export const wecode_url = 'http://wecode.co.kr/';
+
+export const overall_experiences = [
+  {
+    title: '클래스101 인턴쉽',
+    date: '2019. 11. - 2019. 12.',
+    details:
+      '클래스101에서 백엔드 개발자로 1개월동안 인턴쉽 프로그램을 진행하였습니다. 사내 EX팀의 어드민 대시보드를 개발했습니다.'
+  },
+  {
+    title: 'Wecode Coding BootCamp',
+    date: '2019. 09. - 2019. 12.',
+    details:
+      '위코드 코딩부트캠프 4기 백엔드 과정을 수료하였습니다. 백엔드 개발에 필요한 기초 개념을 공부하고 팀 프로젝트를 2번 진행하였습니다.'
+  },
+  {
+    title: '서울과학기술대학교 컴퓨터공학과',
+    date: '2010. 03. - ',
+    details:
+      '좋은 개발자가 되기로 결심한 후 2018년 컴퓨터공학과로 전과를 하여 1년간 공부를 하였습니다. 운영체제, 네트워크 과목을 가장 재미있게 공부하였고 좋은 성적으로 이수하였습니다. 팀 프로젝트와 백엔드 개발에 심한 갈증을 느껴 휴학후 코딩부트캠프 위코드 백엔드 개발과정을 수료했습니다.'
+  }
+];
 
 export const skills_overview =
   'Communication, Javascript, Node.js, MySQL, MongoDB, AWS, Git, Github, React, HTML/CSS, Java, Python, DJango';

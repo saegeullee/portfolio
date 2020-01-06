@@ -1,3 +1,5 @@
+@import '../Styles/constants.module.scss';
+
 .about {
   height: auto;
   padding: 0 200px;
@@ -5,15 +7,37 @@
   &__title {
     font-size: 50px;
     font-weight: bold;
+
+    &:not(:first-child) {
+      margin-top: 100px;
+    }
   }
 
   &__details {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 50px;
   }
 
   &__education-label {
     margin-top: 30px;
+  }
+
+  &__bottom-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  &__bottom-date {
+    margin-top: 10px;
+  }
+
+  &__bottom-details {
+    margin-top: 10px;
+    font-size: $font-size-medium;
+    &:last-child {
+      margin-bottom: 100px;
+    }
   }
 }
 
@@ -28,13 +52,23 @@
     max-width: 100%;
 
     &__title {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
+
+      &:not(:first-child) {
+        margin-top: 50px;
+      }
     }
 
     &__details {
-      font-size: 30px;
+      font-size: 20px;
       margin-top: 50px;
+    }
+
+    &__bottom-details {
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
 }
