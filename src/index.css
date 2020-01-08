@@ -4,14 +4,11 @@
 }
 
 body {
+  font-family: sans-serif, Consolas;
   box-sizing: border-box;
   background-color: #ffffff;
 }
 
 html {
   box-sizing: border-box;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
